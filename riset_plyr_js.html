@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas1</title>
+	<link rel="stylesheet"  href="https://cdn.plyr.io/3.4.7/plyr.css">
+</head>
+<body>
+
+	<div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="https://www.youtube.com/watch?v=2MLSpw-_OLo&t=5s">
+		<div class="plyr__video-embed" id="player">
+			<iframe src="https://www.youtube.com/watch?v=2MLSpw-_OLo&t=5s?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"  allow="autoplay"></iframe>
+		</div>
+	</div>
+
+
+
+	<script type='text/javascript' src='https://cdn.plyr.io/3.4.7/plyr.js'></script>
+	<script type="text/javascript">
+
+		const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+
+	</script>
+</body>
+</html>
